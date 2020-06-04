@@ -1,0 +1,19 @@
+// bld.inf
+PRJ_MMPFILES
+
+//libfaad working on S60 but really too slow to be used - gpac uses native S60 AAC codec instead
+//libfaad.mmp
+
+//not tested
+//libopenjpeg.mmp
+
+libffmpeg.mmp
+libfreetype.mmp
+libjpeg.mmp
+libjs.mmp
+libmad.mmp
+libpng.mmp
+
+
+PRJ_PLATFORMS
+GCCE

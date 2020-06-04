@@ -1,0 +1,4 @@
+/*dummy config file incluing static MSVC one*/
+#include "../config_msvc.h"
+
+

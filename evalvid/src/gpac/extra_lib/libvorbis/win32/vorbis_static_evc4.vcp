@@ -1,0 +1,548 @@
+# Microsoft eMbedded Visual Tools Project File - Name="vorbis_static" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE ARMV4) Static Library" 0xa304
+
+CFG=vorbis_static - Win32 (WCE ARMV4) Release
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "vorbis_static_evc4.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "vorbis_static_evc4.vcn" CFG="vorbis_static - Win32 (WCE ARMV4) Release"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "vorbis_static - Win32 (WCE ARMV4) Release" (based on "Win32 (WCE ARMV4) Static Library")
+!MESSAGE "vorbis_static - Win32 (WCE ARMV4) Debug" (based on "Win32 (WCE ARMV4) Static Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+CPP=clarm.exe
+
+!IF  "$(CFG)" == "vorbis_static - Win32 (WCE ARMV4) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMV4Rel"
+# PROP BASE Intermediate_Dir "ARMV4Rel"
+# PROP BASE CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "obj/arm_ppc03_rel"
+# PROP Intermediate_Dir "obj/arm_ppc03_rel"
+# PROP CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Sec_AlwaysSign 0
+# PROP Sec_ConfigureDevice 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /O2 /M$(CECrtMT) /c
+# ADD CPP /nologo /W3 /I "../include" /I "../../libogg/include" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /O2 /M$(CECrtMT) /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"../../lib/arm_ppc03_rel/vorbis_static.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "vorbis_static - Win32 (WCE ARMV4) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMV4Dbg"
+# PROP BASE Intermediate_Dir "ARMV4Dbg"
+# PROP BASE CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "obj/arm_ppc03_deb"
+# PROP Intermediate_Dir "obj/arm_ppc03_deb"
+# PROP CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Sec_AlwaysSign 0
+# PROP Sec_ConfigureDevice 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Zi /Od /I "../include" /I "../../libogg/include" /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /M$(CECrtMTDebug) /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"../../lib/arm_ppc03_deb/vorbis_static.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ENDIF 
+
+# Begin Target
+
+# Name "vorbis_static - Win32 (WCE ARMV4) Release"
+# Name "vorbis_static - Win32 (WCE ARMV4) Debug"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=..\lib\analysis.c
+DEP_CPP_ANALY=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\registry.h"\
+	"..\lib\scales.h"\
+	"..\lib\smallft.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\bitrate.c
+DEP_CPP_BITRA=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\smallft.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\block.c
+DEP_CPP_BLOCK=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\lpc.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\registry.h"\
+	"..\lib\smallft.h"\
+	"..\lib\window.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\codebook.c
+DEP_CPP_CODEB=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\codebook.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\scales.h"\
+	
+NODEP_CPP_CODEB=\
+	"..\lib\vorbis\book\lsp20_0.vqh"\
+	"..\lib\vorbis\book\res0a_13.vqh"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\envelope.c
+DEP_CPP_ENVEL=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\scales.h"\
+	"..\lib\smallft.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\floor0.c
+DEP_CPP_FLOOR=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\lpc.h"\
+	"..\lib\lsp.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\registry.h"\
+	"..\lib\scales.h"\
+	"..\lib\smallft.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\floor1.c
+DEP_CPP_FLOOR1=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\registry.h"\
+	"..\lib\scales.h"\
+	"..\lib\smallft.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\info.c
+DEP_CPP_INFO_=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\registry.h"\
+	"..\lib\smallft.h"\
+	"..\lib\window.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\lookup.c
+DEP_CPP_LOOKU=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\lookup.h"\
+	"..\lib\lookup_data.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\lpc.c
+DEP_CPP_LPC_C=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\lpc.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\scales.h"\
+	"..\lib\smallft.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\lsp.c
+DEP_CPP_LSP_C=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\lookup.c"\
+	"..\lib\lookup.h"\
+	"..\lib\lookup_data.h"\
+	"..\lib\lsp.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\scales.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\mapping0.c
+DEP_CPP_MAPPI=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\lpc.h"\
+	"..\lib\lsp.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\registry.h"\
+	"..\lib\scales.h"\
+	"..\lib\smallft.h"\
+	"..\lib\window.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\mdct.c
+DEP_CPP_MDCT_=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\psy.c
+DEP_CPP_PSY_C=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\lpc.h"\
+	"..\lib\masking.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\scales.h"\
+	"..\lib\smallft.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\registry.c
+DEP_CPP_REGIS=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\registry.h"\
+	"..\lib\smallft.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\res0.c
+DEP_CPP_RES0_=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\registry.h"\
+	"..\lib\smallft.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\sharedbook.c
+DEP_CPP_SHARE=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\codebook.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\scales.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\smallft.c
+DEP_CPP_SMALL=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\misc.h"\
+	"..\lib\smallft.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\synthesis.c
+DEP_CPP_SYNTH=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\backends.h"\
+	"..\lib\bitrate.h"\
+	"..\lib\codebook.h"\
+	"..\lib\codec_internal.h"\
+	"..\lib\envelope.h"\
+	"..\lib\highlevel.h"\
+	"..\lib\mdct.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	"..\lib\psy.h"\
+	"..\lib\registry.h"\
+	"..\lib\smallft.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\window.c
+DEP_CPP_WINDO=\
+	"..\..\libogg\include\ogg\ogg.h"\
+	"..\..\libogg\include\ogg\os_types.h"\
+	"..\include\vorbis\codec.h"\
+	"..\lib\misc.h"\
+	"..\lib\os.h"\
+	
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=..\lib\backends.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\bitrate.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\codebook.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\codec_internal.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\envelope.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\highlevel.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\lookup.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\lookup_data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\lpc.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\lsp.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\masking.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\mdct.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\misc.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\os.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\psy.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\registry.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\scales.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\smallft.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\window.h
+# End Source File
+# End Group
+# End Target
+# End Project

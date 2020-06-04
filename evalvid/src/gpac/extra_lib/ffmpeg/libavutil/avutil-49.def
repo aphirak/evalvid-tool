@@ -1,0 +1,59 @@
+EXPORTS
+    av_add_q @1
+    av_adler32_update @2
+    av_crc @3
+    av_crc04C11DB7 @4 DATA
+    av_crc07 @5 DATA
+    av_crc8005 @6 DATA
+    av_crcEDB88320 @7 DATA
+    av_crc_init @8
+    av_d2q @9
+    av_dbl2ext @10
+    av_dbl2int @11
+    av_div_q @12
+    av_evaluate_lls @13
+    av_ext2dbl @14
+    av_fifo_drain @15
+    av_fifo_free @16
+    av_fifo_generic_read @17
+    av_fifo_init @18
+    av_fifo_read @19
+    av_fifo_realloc @20
+    av_fifo_size @21
+    av_fifo_write @22
+    av_flt2int @23
+    av_free @24
+    av_freep @25
+    av_init_lls @26
+    av_int2dbl @27
+    av_int2flt @28
+    av_log @29
+    av_log_default_callback @30
+    av_log_get_level @31
+    av_log_level @32 DATA
+    av_log_set_callback @33
+    av_log_set_level @34
+    av_malloc @35
+    av_mallocz @36
+    av_md5_final @37
+    av_md5_init @38
+    av_md5_size @39 DATA
+    av_md5_sum @40
+    av_md5_update @41
+    av_mul_q @42
+    av_realloc @43
+    av_reduce @44
+    av_rescale @45
+    av_rescale_q @46
+    av_rescale_rnd @47
+    av_solve_lls @48
+    av_strdup @49
+    av_sub_q @50
+    av_tree_destroy @51
+    av_tree_find @52
+    av_tree_insert @53
+    av_update_lls @54
+    av_vlog @55
+    ff_gcd @56
+    ff_log2_tab @57 DATA
+    ff_sqrt_tab @58 DATA

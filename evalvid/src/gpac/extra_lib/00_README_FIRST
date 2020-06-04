@@ -1,0 +1,266 @@
+I Overview
+This package contains all libraries needed to build an almost complete complete version of GPAC version 0.4.5.
+To find out more about non included libraries in this package, please refer to GPAC install documentation.
+
+See each package for License terms.
+
+Windows Users:
+
+All packages are configure to compile "out of the box" for Win32 VC6 and WinCE eVC4
+
+If you wish to use different versions of these packages, you MUST update the headers included in the GPAC distribution (gpac/extra_lib/include/*) and copy 
+the compiled libraries in the appropriate directory in the GPAC distribution (gpac/extra_lib/lib/$platform_build) where $platform_build is one of:
+	* w32_deb: win32 platform, debug version (MSVC6 compiler)
+	* w32_rel: win32 platform, release version (MSVC6 compiler)
+	* arm_ppc03_deb: ARM PocketPC/Smartphone 2003 platform, debug version (MS eVC4 compiler)
+	* arm_ppc03_rel: ARM PocketPC/Smartphone 2003 platform, release version (MS eVC4 compiler)
+
+The simplest way is to copy the entire content of the build dir (eg gpac_extra_lib/lib/*) to the gpac lib dir (gpac/extra_lib/lib/)
+
+GCC Users:
+
+If you wish to use different versions of these packages and are not planing to install these packages on your system:
+* you MUST update the headers included in the GPAC distribution (gpac/extra_lib/include/*) 
+* you MUST copy the compiled lib in gpac/extra_lib/lib/gcc in the GPAC distribution. Unlike for Windows the package files are not output in gpac_extra_lib/lib/gcc,  you will have to look for them...
+
+FFMPEG fans:
+If you plan to use a different FFMPEG version than the one included in this package, you will need to copy (unless installing ffmpeg on your system)
+	ffmpeg/libavcodec: avcodec.h
+	ffmpeg/libavformat: avformat.h avio.h
+	ffmpeg/libavutil: common.h rational.h integer.h intfloat_readwrite.h log.h mathematics.h
+to gpac/extra_lib/include/ffmpeg, and to remove from avformat.h the lines (or copy the specified headers):
+	#include "rtp.h"
+	#include "rtsp.h"
+	
+(ffmpeg rtp is disabled in gpac)
+
+
+II Compiling with MS VC6
+
+	II.1 Regular Libraries
+	- Open build/msvc6/BuildAll.dsw
+	- do Build->Batch Build , (re) build All
+
+	II.2 Compiling ffmpeg for win32
+	- get MinGW installed on your system (cf http://www.mingw.org) 
+	- get in ffmpeg directory
+	- type ./configure --enable-shared --disable-static --disable-debug (you may need to specify --enable-memalign-hack. You may want to specify --disable-encoders to get a smaller
+	dll but the gain is not really important)
+	- type make
+	- all libraries and DLLs are in ffmpeg/libavcodec, ffmpeg/libavformat, ffmpeg/libavutil - copy those libraries to gpac/extra_lib/lib/w32_deb and gpac/extra_lib/lib/w32_rel
+
+	II.3 GPAC Configuring
+	- all libraries are in lib/w32_deb and lib/w32_rel (EXCEPT ffmpeg ones) - copy those libraries to gpac/extra_lib/lib/w32_deb and gpac/extra_lib/lib/w32_rel
+	- all DLLs are in lib/w32_deb and lib/w32_rel (EXCEPT ffmpeg ones) - copy those DLLs to gpac/bin/w32_deb and gpac/bin/w32_rel
+	- if you plan to compile the GDIplus plugin in GPAC, also install GDIplus (cf section V)
+
+
+III Compiling with MS eVC4
+
+	- Open build/msevc4/BuildAll.vcw
+	- do Build->Batch Build , (re) build All
+	- all libraries are in lib/arm_ppc03_deb and lib/arm_ppc03_rel - copy those libraries to gpac/extra_lib/lib/arm_ppc03_deb and gpac/extra_lib/lib/arm_ppc03_rel
+	- all DLLs are in lib/arm_ppc03_deb and lib/arm_ppc03_rel - copy those DLLs to gpac/bin/arm_ppc03_deb and gpac/bin/arm_ppc03_rel
+
+
+IV Compiling with GCC
+	NOTES: 
+	 *	As said above, the files are not output in gpac_extra_lib/lib/gcc you will have to look for them and copy them in gpac/extra_lib/lib/gcc in the GPAC distribution
+	 *	If you are not installing these libraries on your system and use shared version (.so, .dll), you MUST update your environment settings so that the shared libraries may be 
+	found (usually LD_LIBRARY_PATH). As a general rule you'd better compile as static libs if you don't want to install the libs on your system. You may want to copy the shared 
+	libraries to gpac/bin/gcc, but this is optional
+	 * if you are installing the libraries on your system, just type 'make install' once each library is successfully compiled
+	
+	IV.1 Compiling faad2
+			./bootstrap
+			./configure
+			make
+			if you're not installing this lib on the system, copy libfaad.a to gpac/extra_lib/lib/gcc
+	
+	IV.2 Compiling FreeType
+			./configure
+			make
+			if you're not installing this lib on the system, copy libfreetype.a to gpac/extra_lib/lib/gcc
+			
+	IV.3 Compiling ffmpeg
+			./configure --disable-debug
+			make
+			NOTE: DO NOT specify --enable-shared under MinGW if you're building GPAC with GCC
+			if you're not installing this lib on the system, copy libavcodec.a and libavformat.a to gpac/extra_lib/lib/gcc (they may be called avcodec.lib and avformat.lib under MinGW)
+			
+	IV.4 Compiling JS
+		* js under MinGW:
+			cd js/fdmlib
+			cp makefile.mingw Makefile
+			make
+			cd js/
+			cp makefile.mingw makefile
+			Make
+			if you're not installing this lib on the system, copy js/libjs.a to gpac/extra_lib/lib/gcc and js/js.dll to gpac/bin/gcc
+			
+		* js with other GCC build
+			make -f Makefile.ref (cf js/Readme.html or WWW)
+			if you're not installing this lib on the system, copy js/libjs.a to gpac/extra_lib/lib/gcc and js/js.so to gpac/bin/gcc
+			
+			NOTE: compilation may fail with GCC 4.1 - this is a known GCC bug. You will have to build JS in optimised mode:
+			 export BUILD_OPT=1
+			 make -f Makefile.ref
+			
+	IV.5 Compiling libjpg 
+			./configure
+			make
+			NOTE1: you MUST copy the generated jconfig.h (except under MinGW) to gpac/extra_lib/include/jpeg if you're not installing the jpeg lib on the system
+			NOTE2: this will erase the win32 config file (jconfig.h) for VC6 and EVC3, a backup file is provided (jconfig.win32) for later rebuild
+			if you're not installing this lib on the system, copy libjpeg.a to gpac/extra_lib/lib/gcc
+
+	IV.6 Compiling libpng
+			get the right makefile in libpng/scripts/ and copy it to libpng/Makefile. For MinGW, use the makefile.cygwin file
+			rm install
+			make ZLIBINC=../zlib
+			Note for MinGW users: don't bother about any ld errors, we only use libpng.a.
+			if you're not installing this lib on the system, copy libpng.a to gpac/extra_lib/lib/gcc
+
+	IV.7 Compiling libmad
+			./configure
+			make
+			NOTE: this will erase the win32 config file (config.h) for VC6 and EVC3, a backup file is provided ( mad/msvc++/config.h and mad/msevc/config.h) for later rebuild
+			if you're not installing this lib on the system, copy libmad.a to gpac/extra_lib/lib/gcc
+
+	IV.8 Compiling xvidcore
+			cd xvidcore/build/generic
+			./configure
+			make
+			if you're not installing this lib on the system, copy libxvidcore.a to gpac/extra_lib/lib/gcc
+
+	IV.9 Compiling zlib:
+			./configure
+			make
+			if you're not installing this lib on the system, copy libz.a to gpac/extra_lib/lib/gcc
+
+	IV.10 Compiling libopenjpeg:
+			make
+			if you're not installing this lib on the system, copy libopenjpeg.a to gpac/extra_lib/lib/gcc
+
+	IV.11 Compiling libogg
+			./configure
+			make
+			if you're not installing this lib on the system, copy libogg.a to gpac/extra_lib/lib/gcc
+
+	IV.12 Compiling libvorbis
+			./configure
+			make
+			if you're not installing this lib on the system, copy libvorbis.a to gpac/extra_lib/lib/gcc
+
+	IV.13 Compiling libtheora
+			./configure
+			make
+			if you're not installing this lib on the system, copy libtheora.a to gpac/extra_lib/lib/gcc
+
+V Compiling for symbian
+    The set of extra lib have only been tested on symbian S60 3rd edition. You will need to get the symbian SDK from Nokia/Symbian/SE, 
+    and verify it is properly setup.
+    You may modify the compilation option of the SDK in files SDK\Epoc32\tools\compilation_config, especially removing C++ compil options 
+
+    At prompt (win32 cmd.exe):
+    cd gpac_extra_libs/build/symbian
+    bldmake bldfiles
+    abld build gcce urel
+    
+    This will build the following libraries: freetype, jpeg, js, mad, png, openjpeg. 
+    ffmpeg library can be compiled by editing bld.inf file but is not working on symbian (at least with GPAC)
+    faad library can be compiled by editing bld.inf file but is too slow to be used on symbian. GPAC uses symbian native AAC decoder
+      if available
+    Ogg/vorbis/theora are not available for GPAC on symbian yet.
+    
+VI Detailed Content
+	Listing of all libraries, versions and modifications to original source tree
+	
+** faad2
+	faad2 library version 2.6.1
+	
+** ffmpeg
+	cvs snapshot from 08/02/2007 with heavy modifications for MSVC compilers (VC6, eVC4) and symbian. 
+  All mods and VC6/eVC4 projects are released under LGPL (same as ffmpeg)
+  !! The MSVC compil are really meant for testing and support none of the numerous optimization ffmpeg uses when compiled with GCC !!
+  
+
+** freetype
+	freetype 2.3.7 library
+
+** js
+	SpiderMonkey v1.7.0 JavaScript interpreter
+	/js/src: added MSVC and eVC workspace/project files
+	NOTE: the code has been modified for WinCE compilation (look for /*JLF ... */ and js/winCE directory)
+	
+** libjpg
+	IJG JPEG implementation Version 6b. Added project files for MSVC and eVC
+	modified for WinCE compilation (look for _WIN32_CE_)
+	modified jconfig.win32 to support both win32 and MinGW
+
+** libpng
+	Official LibPNG software, version 1.2.33 
+	/libpng/projects/EVC: added workspace/project files for embeddedVC
+	
+** libmad
+	libMAD library version 0.15.1b
+	/mad/msevc/libmad: added workspace/project files for embeddedVC
+	modified mad.h for WinCE compilation (FPM_ARM fixed-point doesn't compile, winCE uses FPM_DEFAULT fixed-point)
+
+** xvidcore
+	xvid codec 1.1.3
+	removed vfw and DS filters, examples and debian folders
+
+** libogg
+	libogg library version 1.1.3
+	added eVC4 project files
+
+** libvorbis
+	libvorbis library version 1.2.0
+	added eVC4 project files
+	fixed FPU handling in include/os.h to support eVC3 (asm not available)
+
+** libtheora
+	libtheora library version 1.0
+	added eVC4 project files
+
+** OpenJPEG
+	Official openjpeg library, version 1.3 with WinCE support
+    * removed shared library compil (MSVCs and Makefile)
+    * removed all extra dirs, only the codec is included    
+
+** zlib
+	Official zlib library, version 1.2.3 with CE support
+
+** a52dec
+  AC3 decoder library - a52dec package version 0.7.4
+	added eVC4 project files
+  
+** AMR_NB
+	3GPP AMR Narrow Band fixed-point codec. The original version is TS26.073, and
+	is available at from http://www.3gpp.org/ftp/Specs/archive/26_series/26.073/26073-700.zip
+	The only modified file is typedefs.h for VC6/GPAC compilation and WinCE-PocketPC compilation
+	Copy the entire content of this directory to gpac/Plugins/amr_dec/AMR_NB to build the AMR NB fixed-point plugin
+
+** AMR_NB_FT
+	3GPP AMR floating-point codec. The original version is TS26.104, and
+	is available at from http://www.3gpp.org/ftp/Specs/archive/26_series/26.104/26104-700.zip
+	Copy the entire content of this directory to gpac/Plugins/amr_float_dec/AMR_NB_FT to build the AMR NB plugin
+
+** AMR_WB_FT
+	3GPP AMR WideBand floating-point codec. The original version is TS26.204, and
+	is available at from http://www.3gpp.org/ftp/Specs/archive/26_series/26.204/26204-710.zip
+	Copy the entire content of this directory to gpac/Plugins/amr_float_dec/AMR_WB_FT to build the AMR WB plugin
+
+** GDIplus.zip
+	MS Windows GDIplus SDK version 1.0 (header, lib and runtime)
+	this is needed for GDIplus plugin compilation, cf install.txt included in archive for installation details
+
+** GAPI.zip
+	Microsoft PocketPC framebuffer library version 1.2 (header, lib and runtime
+	this is needed for video output plugin on PocketPC,	cf GAPI/install.txt
+			
+** dx80_mgw.zip
+	DirectX 8 SDK for MinGW (from http://alleg.sourceforge.net/wip.html)
+
+** gecko-sdk-i586-pc-msvc-1.7.13.zip
+Mozilla gecko SDK for Win32.

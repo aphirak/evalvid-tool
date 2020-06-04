@@ -1,0 +1,31 @@
+TARGET libpng.lib
+TARGETTYPE LIB
+CAPABILITY	NetworkServices
+UID		0x10000080 0x10000081
+
+MACRO PNG_NO_WRITE_sCAL
+
+//PNG files
+SOURCEPATH ..\..\libpng
+SOURCE png.c
+SOURCE pngerror.c
+SOURCE pngget.c
+SOURCE pngmem.c
+SOURCE pngpread.c
+SOURCE pngread.c
+SOURCE pngrio.c
+SOURCE pngrtran.c
+SOURCE pngrutil.c
+SOURCE pngset.c
+SOURCE pngtrans.c
+SOURCE pngwio.c
+SOURCE pngwrite.c
+SOURCE pngwtran.c
+SOURCE pngwutil.c
+
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\libc
+
+LIBRARY euser.lib estlib.lib
+
+

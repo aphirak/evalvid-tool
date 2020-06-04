@@ -1,0 +1,5471 @@
+# Microsoft eMbedded Visual Tools Project File - Name="ffmpeg" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE ARMV4) Static Library" 0xa304
+
+CFG=ffmpeg - Win32 (WCE ARMV4) Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "ffmpeg.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "ffmpeg.vcn" CFG="ffmpeg - Win32 (WCE ARMV4) Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "ffmpeg - Win32 (WCE ARMV4) Release" (based on "Win32 (WCE ARMV4) Static Library")
+!MESSAGE "ffmpeg - Win32 (WCE ARMV4) Debug" (based on "Win32 (WCE ARMV4) Static Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+CPP=clarm.exe
+
+!IF  "$(CFG)" == "ffmpeg - Win32 (WCE ARMV4) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMV4Rel"
+# PROP BASE Intermediate_Dir "ARMV4Rel"
+# PROP BASE CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "obj/arm_ppc03_rel"
+# PROP Intermediate_Dir "obj/arm_ppc03_rel"
+# PROP CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Sec_AlwaysSign 0
+# PROP Sec_ConfigureDevice 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /O2 /M$(CECrtMT) /c
+# ADD CPP /nologo /I "./" /I "./libavcodec" /I "./include" /I "./libavutil" /I "../zlib" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /D "HAVE_AV_CONFIG_H" /D "CONFIG_MSVC" /M$(CECrtMT) /c
+# SUBTRACT CPP /O<none> /YX
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"../lib/arm_ppc03_rel/ffmpeg.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "ffmpeg - Win32 (WCE ARMV4) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMV4Dbg"
+# PROP BASE Intermediate_Dir "ARMV4Dbg"
+# PROP BASE CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "obj/arm_ppc03_dbg"
+# PROP Intermediate_Dir "obj/arm_ppc03_dbg"
+# PROP CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Sec_AlwaysSign 0
+# PROP Sec_ConfigureDevice 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /Zi /I "./" /I "./libavcodec" /I "./include" /I "./libavutil" /I "../zlib" /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /D "HAVE_AV_CONFIG_H" /D "CONFIG_MSVC" /M$(CECrtMTDebug) /c
+# SUBTRACT CPP /YX
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"../lib/arm_ppc03_deb/ffmpeg.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ENDIF 
+
+# Begin Target
+
+# Name "ffmpeg - Win32 (WCE ARMV4) Release"
+# Name "ffmpeg - Win32 (WCE ARMV4) Debug"
+# Begin Group "libavcodec"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\libavcodec\4xm.c
+DEP_CPP_4XM_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_4XM_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\8bps.c
+DEP_CPP_8BPS_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_8BPS_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\aasc.c
+DEP_CPP_AASC_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_AASC_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\adpcm.c
+DEP_CPP_ADPCM=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ADPCM=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\adx.c
+DEP_CPP_ADX_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ADX_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\alac.c
+DEP_CPP_ALAC_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ALAC_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\allcodecs.c
+DEP_CPP_ALLCO=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ALLCO=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\asv1.c
+DEP_CPP_ASV1_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ASV1_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\avs.c
+DEP_CPP_AVS_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_AVS_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\bitstream.c
+DEP_CPP_BITST=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_BITST=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\bitstream_filter.c
+DEP_CPP_BITSTR=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\mpegaudio.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_BITSTR=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\bmp.c
+DEP_CPP_BMP_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\bmp.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_BMP_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\cabac.c
+DEP_CPP_CABAC=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\cabac.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	".\libavutil\x86_cpu.h"\
+	
+NODEP_CPP_CABAC=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\cavs.c
+DEP_CPP_CAVS_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\cavsdata.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\golomb.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_CAVS_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\cavsdsp.c
+DEP_CPP_CAVSD=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_CAVSD=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\cinepak.c
+DEP_CPP_CINEP=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_CINEP=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\cljr.c
+DEP_CPP_CLJR_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_CLJR_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\cook.c
+DEP_CPP_COOK_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\bytestream.h"\
+	".\libavcodec\cookdata.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_COOK_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\cscd.c
+DEP_CPP_CSCD_=\
+	"..\zlib\zconf.h"\
+	"..\zlib\zlib.h"\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\lzo.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_CSCD_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\cyuv.c
+DEP_CPP_CYUV_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_CYUV_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\dpcm.c
+DEP_CPP_DPCM_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_DPCM_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\dsicinav.c
+DEP_CPP_DSICI=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_DSICI=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\dsputil.c
+DEP_CPP_DSPUT=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\faandct.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavcodec\simple_idct.h"\
+	".\libavcodec\snow.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_DSPUT=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\dvbsub.c
+DEP_CPP_DVBSU=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_DVBSU=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\dvbsubdec.c
+DEP_CPP_DVBSUB=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_DVBSUB=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\dvdsubdec.c
+DEP_CPP_DVDSU=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_DVDSU=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\dvdsubenc.c
+DEP_CPP_DVDSUB=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_DVDSUB=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\error_resilience.c
+DEP_CPP_ERROR=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ERROR=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\faandct.c
+DEP_CPP_FAAND=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\faandct.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_FAAND=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\fdctref.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\fft.c
+DEP_CPP_FFT_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_FFT_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\flashsv.c
+DEP_CPP_FLASH=\
+	"..\zlib\zconf.h"\
+	"..\zlib\zlib.h"\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_FLASH=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\flashsvenc.c
+DEP_CPP_FLASHS=\
+	"..\zlib\zconf.h"\
+	"..\zlib\zlib.h"\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\bytestream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_FLASHS=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\flicvideo.c
+DEP_CPP_FLICV=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_FLICV=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\fraps.c
+DEP_CPP_FRAPS=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_FRAPS=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\g726.c
+DEP_CPP_G726_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_G726_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\gif.c
+DEP_CPP_GIF_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\bytestream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_GIF_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\gifdec.c
+DEP_CPP_GIFDE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bytestream.h"\
+	".\libavcodec\lzw.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_GIFDE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\golomb.c
+DEP_CPP_GOLOM=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	
+NODEP_CPP_GOLOM=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\h261.c
+DEP_CPP_H261_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\h261data.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_H261_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\h263.c
+DEP_CPP_H263_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\h263data.h"\
+	".\libavcodec\mpeg4data.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_H263_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\h263dec.c
+DEP_CPP_H263D=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_H263D=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\h264.c
+DEP_CPP_H264_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\cabac.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\golomb.h"\
+	".\libavcodec\h264data.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavcodec\svq3.c"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	".\libavutil\x86_cpu.h"\
+	
+NODEP_CPP_H264_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\h264dsp.c
+DEP_CPP_H264D=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_H264D=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\h264enc.c
+DEP_CPP_H264E=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\h264data.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_H264E=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\h264idct.c
+DEP_CPP_H264I=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_H264I=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\huffyuv.c
+DEP_CPP_HUFFY=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_HUFFY=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\idcinvideo.c
+DEP_CPP_IDCIN=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_IDCIN=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\imc.c
+DEP_CPP_IMC_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\imcdata.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_IMC_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\indeo2.c
+DEP_CPP_INDEO=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\indeo2data.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_INDEO=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\indeo3.c
+DEP_CPP_INDEO3=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\indeo3data.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_INDEO3=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\interplayvideo.c
+DEP_CPP_INTER=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_INTER=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\jfdctfst.c
+DEP_CPP_JFDCT=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_JFDCT=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\jfdctint.c
+DEP_CPP_JFDCTI=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_JFDCTI=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\jrevdct.c
+DEP_CPP_JREVD=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_JREVD=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\kmvc.c
+DEP_CPP_KMVC_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_KMVC_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\lcl.c
+DEP_CPP_LCL_C=\
+	"..\zlib\zconf.h"\
+	"..\zlib\zlib.h"\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_LCL_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\loco.c
+DEP_CPP_LOCO_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\golomb.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_LOCO_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\lzo.c
+DEP_CPP_LZO_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\lzo.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	
+NODEP_CPP_LZO_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\lzw.c
+DEP_CPP_LZW_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\lzw.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_LZW_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\mace.c
+DEP_CPP_MACE_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MACE_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\mdct.c
+DEP_CPP_MDCT_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MDCT_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\mjpeg.c
+DEP_CPP_MJPEG=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\bytestream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\golomb.h"\
+	".\libavcodec\jpeg_ls.c"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavcodec\sp5x.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MJPEG=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\mmvideo.c
+DEP_CPP_MMVID=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MMVID=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\motion_est.c
+DEP_CPP_MOTIO=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\motion_est_template.c"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MOTIO=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\mpeg12.c
+DEP_CPP_MPEG1=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mdec.c"\
+	".\libavcodec\mpeg12data.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MPEG1=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\mpegaudio.c
+DEP_CPP_MPEGA=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\mpegaudio.h"\
+	".\libavcodec\mpegaudiotab.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MPEGA=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\mpegaudiodec.c
+DEP_CPP_MPEGAU=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\armv4l\mathops.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\i386\mathops.h"\
+	".\libavcodec\mathops.h"\
+	".\libavcodec\mpegaudio.h"\
+	".\libavcodec\mpegaudiodectab.h"\
+	".\libavcodec\ppc\mathops.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MPEGAU=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\mpegvideo.c
+DEP_CPP_MPEGV=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\faandct.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MPEGV=\
+	".\libavcodec\libvo\fastmemcpy.h"\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\msmpeg4.c
+DEP_CPP_MSMPE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\msmpeg4data.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavcodec\simple_idct.h"\
+	".\libavcodec\wmv2.c"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MSMPE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\msrle.c
+DEP_CPP_MSRLE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MSRLE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\msvideo1.c
+DEP_CPP_MSVID=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MSVID=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\nuv.c
+DEP_CPP_NUV_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\lzo.h"\
+	".\libavcodec\rtjpeg.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_NUV_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\opt.c
+DEP_CPP_OPT_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\opt.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_OPT_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\parser.c
+DEP_CPP_PARSE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegaudio.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_PARSE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\pcm.c
+DEP_CPP_PCM_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_PCM_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\png.c
+DEP_CPP_PNG_C=\
+	"..\zlib\zconf.h"\
+	"..\zlib\zlib.h"\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_PNG_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\pnm.c
+DEP_CPP_PNM_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_PNM_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\qdm2.c
+DEP_CPP_QDM2_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\mpegaudio.h"\
+	".\libavcodec\qdm2data.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_QDM2_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\qdrw.c
+DEP_CPP_QDRW_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_QDRW_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\qpeg.c
+DEP_CPP_QPEG_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_QPEG_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\qtrle.c
+DEP_CPP_QTRLE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_QTRLE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\ra144.c
+DEP_CPP_RA144=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\ra144.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RA144=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\ra288.c
+DEP_CPP_RA288=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\ra288.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RA288=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\rangecoder.c
+DEP_CPP_RANGE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\rangecoder.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RANGE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\ratecontrol.c
+DEP_CPP_RATEC=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RATEC=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\raw.c
+DEP_CPP_RAW_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RAW_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\resample.c
+DEP_CPP_RESAM=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RESAM=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\resample2.c
+DEP_CPP_RESAMP=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RESAMP=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\roqvideo.c
+DEP_CPP_ROQVI=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ROQVI=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\rpza.c
+DEP_CPP_RPZA_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RPZA_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\rtjpeg.c
+DEP_CPP_RTJPE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\rtjpeg.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RTJPE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\rv10.c
+DEP_CPP_RV10_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RV10_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\shorten.c
+DEP_CPP_SHORT=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\golomb.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_SHORT=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\simple_idct.c
+DEP_CPP_SIMPL=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\simple_idct.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_SIMPL=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\smacker.c
+DEP_CPP_SMACK=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_SMACK=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\smc.c
+DEP_CPP_SMC_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_SMC_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\sonic.c
+DEP_CPP_SONIC=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\golomb.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_SONIC=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\svq1.c
+DEP_CPP_SVQ1_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavcodec\svq1_cb.h"\
+	".\libavcodec\svq1_vlc.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_SVQ1_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\targa.c
+DEP_CPP_TARGA=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_TARGA=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\tiertexseqv.c
+DEP_CPP_TIERT=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_TIERT=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\tiff.c
+DEP_CPP_TIFF_=\
+	"..\zlib\zconf.h"\
+	"..\zlib\zlib.h"\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\lzw.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_TIFF_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\truemotion1.c
+DEP_CPP_TRUEM=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\truemotion1data.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_TRUEM=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\truemotion2.c
+DEP_CPP_TRUEMO=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_TRUEMO=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\truespeech.c
+DEP_CPP_TRUES=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\truespeech_data.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_TRUES=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\tscc.c
+DEP_CPP_TSCC_=\
+	"..\zlib\zconf.h"\
+	"..\zlib\zlib.h"\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_TSCC_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\tta.c
+DEP_CPP_TTA_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_TTA_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\ulti.c
+DEP_CPP_ULTI_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\ulti_cb.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ULTI_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\utils.c
+DEP_CPP_UTILS=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\opt.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\crc.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_UTILS=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vc1.c
+DEP_CPP_VC1_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavcodec\vc1acdata.h"\
+	".\libavcodec\vc1data.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VC1_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vc1dsp.c
+DEP_CPP_VC1DS=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VC1DS=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vcr1.c
+DEP_CPP_VCR1_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VCR1_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vmdav.c
+DEP_CPP_VMDAV=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VMDAV=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vmnc.c
+DEP_CPP_VMNC_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VMNC_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vorbis.c
+DEP_CPP_VORBI=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\vorbis.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VORBI=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vorbis_data.c
+DEP_CPP_VORBIS=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\vorbis.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VORBIS=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vp3.c
+DEP_CPP_VP3_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavcodec\vp3data.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VP3_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vp3dsp.c
+DEP_CPP_VP3DS=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VP3DS=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vp5.c
+DEP_CPP_VP5_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavcodec\vp56.h"\
+	".\libavcodec\vp56data.h"\
+	".\libavcodec\vp5data.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VP5_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vp56.c
+DEP_CPP_VP56_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavcodec\vp56.h"\
+	".\libavcodec\vp56data.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VP56_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vp56data.c
+DEP_CPP_VP56D=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\vp56data.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	
+NODEP_CPP_VP56D=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vp6.c
+DEP_CPP_VP6_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavcodec\vp56.h"\
+	".\libavcodec\vp56data.h"\
+	".\libavcodec\vp6data.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VP6_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\vqavideo.c
+DEP_CPP_VQAVI=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VQAVI=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\wavpack.c
+DEP_CPP_WAVPA=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_WAVPA=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\wmadec.c
+DEP_CPP_WMADE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\wmadata.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_WMADE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\wnv1.c
+DEP_CPP_WNV1_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_WNV1_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=".\libavcodec\ws-snd1.c"
+DEP_CPP_WS_SN=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_WS_SN=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\xan.c
+DEP_CPP_XAN_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_XAN_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\xl.c
+DEP_CPP_XL_Cfe=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_XL_Cfe=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\xvmcvideo.c
+DEP_CPP_XVMCV=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavcodec\dsputil.h"\
+	".\libavcodec\eval.h"\
+	".\libavcodec\mpegvideo.h"\
+	".\libavcodec\ratecontrol.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	".\xvmc_render.h"\
+	
+NODEP_CPP_XVMCV=\
+	".\libavcodec\libvo\fastmemcpy.h"\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\zmbv.c
+DEP_CPP_ZMBV_=\
+	"..\zlib\zconf.h"\
+	"..\zlib\zlib.h"\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ZMBV_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavcodec\zmbvenc.c
+DEP_CPP_ZMBVE=\
+	"..\zlib\zconf.h"\
+	"..\zlib\zlib.h"\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ZMBVE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# End Group
+# Begin Group "libavformat"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\libavformat\4xm_fmt.c
+DEP_CPP_4XM_F=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_4XM_F=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\adtsenc.c
+DEP_CPP_ADTSE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ADTSE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\aiff.c
+DEP_CPP_AIFF_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\allformats.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_AIFF_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\allformats.c
+DEP_CPP_ALLFO=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\allformats.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ALLFO=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\allformats.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\amr.c
+DEP_CPP_AMR_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_AMR_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=".\libavformat\asf-enc.c"
+DEP_CPP_ASF_E=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\asf.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ASF_E=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\asf.c
+DEP_CPP_ASF_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\mpegaudio.h"\
+	".\libavformat\asf.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ASF_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\asf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\au.c
+DEP_CPP_AU_C114=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\allformats.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_AU_C114=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\avi.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\avidec.c
+DEP_CPP_AVIDE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avi.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_AVIDE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\avienc.c
+DEP_CPP_AVIEN=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avi.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_AVIEN=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\avio.c
+DEP_CPP_AVIO_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_AVIO_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\aviobuf.c
+DEP_CPP_AVIOB=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_AVIOB=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\avs_fmt.c
+DEP_CPP_AVS_F=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavformat\voc.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_AVS_F=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\barpainet.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\base64.c
+DEP_CPP_BASE6=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavformat\base64.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_BASE6=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\base64.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\crc.c
+DEP_CPP_CRC_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\adler32.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_CRC_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\cutils.c
+DEP_CPP_CUTIL=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_CUTIL=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\daud.c
+DEP_CPP_DAUD_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_DAUD_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\dsicin.c
+DEP_CPP_DSICIN=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_DSICIN=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\electronicarts.c
+DEP_CPP_ELECT=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ELECT=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\file.c
+DEP_CPP_FILE_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_FILE_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\flic.c
+DEP_CPP_FLIC_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_FLIC_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\flv.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\flvdec.c
+DEP_CPP_FLVDE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\flv.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_FLVDE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\framehook.c
+DEP_CPP_FRAME=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\framehook.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_FRAME=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\framehook.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\gif_fmt.c
+DEP_CPP_GIF_F=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_GIF_F=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\gifdec_fmt.c
+DEP_CPP_GIFDEC=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_GIFDEC=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\gxf.c
+DEP_CPP_GXF_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_GXF_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\gxf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\gxfenc.c
+DEP_CPP_GXFEN=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\gxf.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\fifo.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_GXFEN=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\idcin.c
+DEP_CPP_IDCIN_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_IDCIN_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\idroq.c
+DEP_CPP_IDROQ=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_IDROQ=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\img2.c
+DEP_CPP_IMG2_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_IMG2_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\ipmovie.c
+DEP_CPP_IPMOV=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_IPMOV=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\isom.c
+DEP_CPP_ISOM_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\isom.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_ISOM_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\isom.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\matroska.c
+DEP_CPP_MATRO=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MATRO=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\mm.c
+DEP_CPP_MM_C148=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MM_C148=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\mmf.c
+DEP_CPP_MMF_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\allformats.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MMF_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\mov.c
+DEP_CPP_MOV_C=\
+	"..\zlib\zconf.h"\
+	"..\zlib\zlib.h"\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\isom.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\qtpalette.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MOV_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\mpc_fmt.c
+DEP_CPP_MPC_F=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MPC_F=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\mpeg.c
+DEP_CPP_MPEG_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\fifo.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MPEG_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\mpjpeg.c
+DEP_CPP_MPJPE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MPJPE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\mtv.c
+DEP_CPP_MTV_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MTV_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\mxf.c
+DEP_CPP_MXF_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MXF_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\nsvdec.c
+DEP_CPP_NSVDE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_NSVDE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\nuv_fmt.c
+DEP_CPP_NUV_F=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_NUV_F=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\psxstr.c
+DEP_CPP_PSXST=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_PSXST=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\raw_fmt.c
+DEP_CPP_RAW_F=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RAW_F=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\riff.c
+DEP_CPP_RIFF_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\allformats.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RIFF_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\riff.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\rm.c
+DEP_CPP_RM_C162=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RM_C162=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\segafilm.c
+DEP_CPP_SEGAF=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_SEGAF=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\sierravmd.c
+DEP_CPP_SIERR=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_SIERR=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\smacker_fmt.c
+DEP_CPP_SMACKE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_SMACKE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\sol.c
+DEP_CPP_SOL_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\allformats.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_SOL_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\swf.c
+DEP_CPP_SWF_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_SWF_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\tiertexseq.c
+DEP_CPP_TIERTE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_TIERTE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\tta_fmt.c
+DEP_CPP_TTA_F=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\bitstream.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_TTA_F=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\utils_fmt.c
+DEP_CPP_UTILS_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavcodec\opt.h"\
+	".\libavformat\allformats.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_UTILS_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\voc.c
+DEP_CPP_VOC_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavformat\voc.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VOC_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\voc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\vocdec.c
+DEP_CPP_VOCDE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavformat\voc.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VOCDE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\vocenc.c
+DEP_CPP_VOCEN=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavformat\voc.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_VOCEN=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\wav.c
+DEP_CPP_WAV_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\allformats.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavformat\riff.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_WAV_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\wc3movie.c
+DEP_CPP_WC3MO=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_WC3MO=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\westwood.c
+DEP_CPP_WESTW=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_WESTW=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\wv.c
+DEP_CPP_WV_C180=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\allformats.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_WV_C180=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavformat\yuv4mpeg.c
+DEP_CPP_YUV4M=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavcodec\avcodec.h"\
+	".\libavformat\avformat.h"\
+	".\libavformat\avio.h"\
+	".\libavformat\os_support.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_YUV4M=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# End Group
+# Begin Group "libavutil"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\libavutil\adler32.c
+DEP_CPP_ADLER=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\adler32.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	
+NODEP_CPP_ADLER=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\adler32.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\aes.c
+DEP_CPP_AES_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\aes.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	
+NODEP_CPP_AES_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\aes.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\aes128.c
+DEP_CPP_AES12=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\aes128.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	
+NODEP_CPP_AES12=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\aes128.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\bswap.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\crc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\crc_util.c
+DEP_CPP_CRC_U=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\crc.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	
+NODEP_CPP_CRC_U=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\fifo.c
+DEP_CPP_FIFO_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\fifo.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	
+NODEP_CPP_FIFO_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\fifo.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\integer.c
+DEP_CPP_INTEG=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	
+NODEP_CPP_INTEG=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\internal.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\intfloat_readwrite.c
+DEP_CPP_INTFL=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	
+NODEP_CPP_INTFL=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\intreadwrite.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\lls.c
+DEP_CPP_LLS_C=\
+	".\libavutil\lls.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\lls.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\log.c
+DEP_CPP_LOG_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\avutil.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intfloat_readwrite.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_LOG_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\mathematics.c
+DEP_CPP_MATHE=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\integer.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_MATHE=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\md5.c
+DEP_CPP_MD5_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\md5.h"\
+	
+NODEP_CPP_MD5_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\md5.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\mem.c
+DEP_CPP_MEM_C=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	
+NODEP_CPP_MEM_C=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\rational.c
+DEP_CPP_RATIO=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\mathematics.h"\
+	".\libavutil\rational.h"\
+	
+NODEP_CPP_RATIO=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\tree.c
+DEP_CPP_TREE_=\
+	".\berrno.h"\
+	".\config.h"\
+	".\config_msvc.h"\
+	".\libavutil\bswap.h"\
+	".\libavutil\common.h"\
+	".\libavutil\internal.h"\
+	".\libavutil\intreadwrite.h"\
+	".\libavutil\log.h"\
+	".\libavutil\tree.h"\
+	
+NODEP_CPP_TREE_=\
+	".\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\tree.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libavutil\x86_cpu.h
+# End Source File
+# End Group
+# End Target
+# End Project

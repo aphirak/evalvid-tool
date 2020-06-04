@@ -1,0 +1,56 @@
+TARGET libfaad.lib
+TARGETTYPE LIB
+CAPABILITY	NetworkServices
+UID		0x10000080 0x10000081
+
+MACRO HAVE_MEMCPY ARM FIXED_POINT
+
+//faad2 files
+SOURCEPATH ..\..\faad2\libfaad
+SOURCE bits.c
+SOURCE cfft.c
+SOURCE common.c
+SOURCE decoder.c
+SOURCE drc.c
+SOURCE drm_dec.c
+SOURCE error.c
+SOURCE filtbank.c
+SOURCE hcr.c
+SOURCE huffman.c
+SOURCE ic_predict.c
+SOURCE is.c
+SOURCE lt_predict.c
+SOURCE mdct.c
+SOURCE mp4.c
+SOURCE ms.c
+SOURCE output.c
+SOURCE pns.c
+SOURCE ps_dec.c
+SOURCE ps_syntax.c
+SOURCE pulse.c
+SOURCE rvlc.c
+SOURCE sbr_dct.c
+SOURCE sbr_dec.c
+SOURCE sbr_e_nf.c
+SOURCE sbr_fbt.c
+SOURCE sbr_hfadj.c
+SOURCE sbr_hfgen.c
+SOURCE sbr_huff.c
+SOURCE sbr_qmf.c
+SOURCE sbr_syntax.c
+SOURCE sbr_tf_grid.c
+SOURCE specrec.c
+SOURCE ssr.c
+SOURCE ssr_fb.c
+SOURCE ssr_ipqf.c
+SOURCE syntax.c
+SOURCE tns.c
+
+
+
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\libc
+
+LIBRARY euser.lib estlib.lib
+
+

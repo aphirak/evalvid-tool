@@ -1,0 +1,27 @@
+TARGET libmad.lib
+TARGETTYPE LIB
+CAPABILITY	NetworkServices
+UID		0x10000080 0x10000081
+
+//use ARM fixed-point
+MACRO FPM_ARM
+
+//MAD tools
+SOURCEPATH ..\..\libmad
+SOURCE bit.c
+SOURCE decoder.c
+SOURCE fixed.c
+SOURCE frame.c
+SOURCE huffman.c
+SOURCE layer12.c
+SOURCE layer3.c
+SOURCE stream.c
+SOURCE synth.c
+SOURCE timer.c
+SOURCE version.c
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\libc
+
+LIBRARY euser.lib estlib.lib
+
+

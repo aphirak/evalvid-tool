@@ -1,0 +1,34 @@
+TARGET libopenjpeg.lib
+TARGETTYPE LIB
+CAPABILITY	NetworkServices
+UID		0x10000080 0x10000081
+
+//compil in static version only
+MACRO OPJ_STATIC
+
+//OpenJPEG files
+SOURCEPATH ..\..\OpenJPEG\libopenjpeg
+SOURCE bio.c
+SOURCE cio.c
+SOURCE dwt.c
+SOURCE event.c
+SOURCE image.c
+SOURCE j2k.c
+SOURCE j2k_lib.c
+SOURCE jp2.c
+SOURCE jpt.c
+SOURCE mct.c
+SOURCE mqc.c
+SOURCE openjpeg.c
+SOURCE pi.c
+SOURCE raw.c
+SOURCE t1.c
+SOURCE t2.c
+SOURCE tcd.c
+SOURCE tgt.c
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\libc
+
+LIBRARY euser.lib estlib.lib
+
+

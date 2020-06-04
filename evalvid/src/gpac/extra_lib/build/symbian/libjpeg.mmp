@@ -1,0 +1,75 @@
+TARGET libjpeg.lib
+TARGETTYPE LIB
+CAPABILITY	NetworkServices
+UID		0x10000080 0x10000081
+
+
+//JPEG files
+SOURCEPATH ..\..\libjpg
+SOURCE cdjpeg.c
+SOURCE ckconfig.c
+SOURCE jcapimin.c
+SOURCE jcapistd.c
+SOURCE jccoefct.c
+SOURCE jccolor.c
+SOURCE jcdctmgr.c
+SOURCE jchuff.c
+SOURCE jcinit.c
+SOURCE jcmainct.c
+SOURCE jcmarker.c
+SOURCE jcmaster.c
+SOURCE jcomapi.c
+SOURCE jcparam.c
+SOURCE jcphuff.c
+SOURCE jcprepct.c
+SOURCE jcsample.c
+SOURCE jctrans.c
+SOURCE jdapimin.c
+SOURCE jdapistd.c
+SOURCE jdatadst.c
+SOURCE jdatasrc.c
+SOURCE jdcoefct.c
+SOURCE jdcolor.c
+SOURCE jddctmgr.c
+SOURCE jdhuff.c
+SOURCE jdinput.c
+SOURCE jdmainct.c
+SOURCE jdmarker.c
+SOURCE jdmaster.c
+SOURCE jdmerge.c
+SOURCE jdphuff.c
+SOURCE jdpostct.c
+SOURCE jdsample.c
+SOURCE jdtrans.c
+SOURCE jerror.c
+SOURCE jfdctflt.c
+SOURCE jfdctfst.c
+SOURCE jfdctint.c
+SOURCE jidctflt.c
+SOURCE jidctfst.c
+SOURCE jidctint.c
+SOURCE jidctred.c
+SOURCE jmemansi.c
+SOURCE jmemmgr.c
+SOURCE jquant1.c
+SOURCE jquant2.c
+SOURCE jutils.c
+SOURCE rdbmp.c
+SOURCE rdcolmap.c
+SOURCE rdgif.c
+SOURCE rdppm.c
+SOURCE rdrle.c
+SOURCE rdswitch.c
+SOURCE rdtarga.c
+SOURCE transupp.c
+SOURCE wrbmp.c
+SOURCE wrgif.c
+SOURCE wrppm.c
+SOURCE wrrle.c
+SOURCE wrtarga.c
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\libc
+
+LIBRARY euser.lib estlib.lib
+
+

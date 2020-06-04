@@ -1,0 +1,53 @@
+TARGET libfreetype.lib
+TARGETTYPE LIB
+CAPABILITY	NetworkServices
+UID		0x10000080 0x10000081
+
+MACRO FT2_BUILD_LIBRARY
+
+//freetype files
+SOURCEPATH ..\..\freetype\src
+SOURCE autofit\autofit.c
+SOURCE bdf\bdf.c
+SOURCE cff\cff.c
+SOURCE base\ftbase.c
+SOURCE base\ftbbox.c
+SOURCE base\ftbdf.c
+SOURCE base\ftbitmap.c
+SOURCE cache\ftcache.c
+SOURCE base\ftdebug.c
+SOURCE base\ftgasp.c
+SOURCE base\ftglyph.c
+SOURCE base\ftgxval.c
+SOURCE gzip\ftgzip.c
+SOURCE base\ftinit.c
+SOURCE lzw\ftlzw.c
+SOURCE base\ftmm.c
+SOURCE base\ftotval.c
+SOURCE base\ftpfr.c
+SOURCE base\ftstroke.c
+SOURCE base\ftsynth.c
+SOURCE base\ftsystem.c
+SOURCE base\fttype1.c
+SOURCE base\ftwinfnt.c
+SOURCE base\ftxf86.c
+SOURCE pcf\pcf.c
+SOURCE pfr\pfr.c
+SOURCE psaux\psaux.c
+SOURCE pshinter\pshinter.c
+SOURCE psnames\psmodule.c
+SOURCE raster\raster.c
+SOURCE sfnt\sfnt.c
+SOURCE smooth\smooth.c
+SOURCE truetype\truetype.c
+SOURCE type1\type1.c
+SOURCE cid\type1cid.c
+SOURCE type42\type42.c
+SOURCE winfonts\winfnt.c
+
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\libc ..\..\freetype\include
+
+LIBRARY euser.lib estlib.lib
+
+

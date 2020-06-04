@@ -1,0 +1,71 @@
+TARGET libjs.lib
+TARGETTYPE LIB
+CAPABILITY	NetworkServices
+UID		0x10000080 0x10000081
+
+//XP_WIN used for symbian spidermonkey
+MACRO XP_WIN
+
+//FDLIBM files
+SOURCEPATH ..\..\js\fdlibm
+SOURCE e_atan2.c
+SOURCE e_pow.c
+SOURCE e_sqrt.c
+SOURCE k_standard.c
+SOURCE s_atan.c
+SOURCE s_copysign.c
+SOURCE s_fabs.c
+SOURCE s_finite.c
+SOURCE s_isnan.c
+SOURCE s_matherr.c
+SOURCE s_rint.c
+SOURCE s_scalbn.c
+SOURCE w_atan2.c
+SOURCE w_pow.c
+SOURCE w_sqrt.c
+//JS files
+SOURCEPATH ..\..\js
+SOURCE jsapi.c
+SOURCE jsarena.c
+SOURCE jsarray.c
+SOURCE jsatom.c
+SOURCE jsbool.c
+SOURCE jscntxt.c
+SOURCE jsdate.c
+SOURCE jsdbgapi.c
+SOURCE jsdhash.c
+SOURCE jsdtoa.c
+SOURCE jsemit.c
+SOURCE jsexn.c
+SOURCE jsfile.c
+SOURCE jsfun.c
+SOURCE jsgc.c
+SOURCE jshash.c
+SOURCE jsinterp.c
+SOURCE jsiter.c
+SOURCE jslock.c
+SOURCE jslog2.c
+SOURCE jslong.c
+SOURCE jsmath.c
+SOURCE jsnum.c
+SOURCE jsobj.c
+SOURCE jsopcode.c
+SOURCE jsparse.c
+SOURCE jsprf.c
+SOURCE jsregexp.c
+SOURCE jsscan.c
+SOURCE jsscope.c
+SOURCE jsscript.c
+SOURCE jsstr.c
+SOURCE jsutil.c
+SOURCE jsxdrapi.c
+SOURCE jsxml.c
+SOURCE prmjtime.c
+//SOURCE winCE\wcetime.c
+
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\libc
+
+LIBRARY euser.lib estlib.lib
+
+
