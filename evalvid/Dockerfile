@@ -18,3 +18,6 @@ COPY src/ .
 RUN sh compile-static.sh
 RUN mkdir -p /data
 CMD ["/bin/bash"]
+
+FROM evalvid as evalvidffmpeg
+RUN apt-get update -y && apt-get install -y --no-install-recommends ffmpeg && rm -rf /var/lib/apt/lists/*
