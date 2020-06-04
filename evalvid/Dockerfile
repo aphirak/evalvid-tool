@@ -1,4 +1,4 @@
-FROM amd64/ubuntu:16.04 as evalvid
+FROM ubuntu:16.04 as evalvid
 
 RUN apt-get update -y \
      && apt-get install --no-install-recommends -y git make pkg-config g++ zlib1g-dev \
