@@ -24,4 +24,4 @@ Dockerhub
 ---
 For anyone who would not like to build your own docker images, you can pull images from Docker hub. My personal Docker hub URL for evalvid toolset is located at https://hub.docker.com/r/aphirak/evalvidtool. Please feel free to use it.
 
-June 4, 2020
+June 5, 2020
