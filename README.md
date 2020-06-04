@@ -8,9 +8,17 @@ Although the original evalvid source code cannot download from the official webs
 - git clone https://github.com/aphirak/evalvid-tool evalvid-tool
 - cd evalvid-tool
 - docker build evalvid/ -t "evalvidtool:latest"
+- docker build evalvid/ -f evalvid/Dockerfile.1404 -t "evalvidtool:14.05"
+- docker build evalvid/ -f evalvid/Dockerfile.1604 -t "evalvidtool:16.04"
 
 #To use the docker image (all compiled tools are in docker image):
 - docker run -it evalvidtool:latest /bin/bash
 
 #To use the docker image with host directory (ex. from host:/home/aphirak/data mapping to docker:/data)
 - docker run -v /home/aphirak/data:/data -it evalvidtool:latest /bin/bash
+
+Dockerhub
+---
+For anyone who would not like to build your own docker images, you can pull images from Docker hub. My personal Docker hub URL for evalvid toolset is located at https://hub.docker.com/r/aphirak/evalvidtool. Please feel free to use it.
+
+June 4, 2020
