@@ -9,6 +9,7 @@ make
 make install
 cp -R include/gpac /usr/include
 cp bin/gcc/libgpac_static.a /usr/lib #for static linking
+make clean
 
 #link lib64 to lib folder
 cd /usr/local/lib
